@@ -1,0 +1,90 @@
+:root {
+    --cor1: rgb(0, 0, 0);
+    --cor2: rgb(255, 255, 255);
+    --cor3: #f5f3f1ea;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: var(--cor1);
+    position: relative;
+    text-align: center;    
+}
+header h1{
+    font-family: 'Blanka', sans-serif;
+    color: var(--cor2);
+    font-size: 80px;
+    display: flex;
+    letter-spacing: 8px;
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+}
+
+header p {
+    color: var(--cor2);
+    margin-top: 50px;
+}
+.logo {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+}
+
+.globo {
+    width: 250px;
+    position: absolute; 
+    z-index: 0; 
+    opacity: 0.6;
+    margin-top: 30px;
+}
+
+nav ul {
+
+    display: flex;
+    color: var(--cor2);
+    gap: 50px;
+    justify-content: center;
+    background-color: var(--cor1);
+    list-style: none;
+    padding: 30px; 
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: bold; 
+    border-radius: 3px;
+    padding: 10px;
+    transition: .5s;   
+    }
+
+nav ul li a:hover {
+    background-color: var(--cor3);
+    color: rgb(11, 11, 11);
+}
+.versiculo {
+    padding-bottom: 20px;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+}
+
+footer {
+    display: flex;
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+footer ul {
+    text-decoration: none;
+    list-style: none;
+}
