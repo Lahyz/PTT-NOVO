@@ -30,16 +30,14 @@ header p {
 }  
 
 .logo {
-    max-width: 1200px;
-    min-width: 400px
+    max-width: 1200px;   
 }
 
 nav ul {  
     text-align: justify;  
     display: flex;     
     color: var(--cor2);
-    gap: 30px;    
-    
+    gap: 30px; 
     list-style: none;
     padding: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -118,7 +116,9 @@ padding: 10px;
  align-items: center;
 } 
 
-
+.logo {
+    width: 300px;
+}
 
 .conteudo-secundario {
         flex-direction: column; 
