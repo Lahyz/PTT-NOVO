@@ -30,7 +30,8 @@ header p {
 }  
 
 .logo {
-    width:auto;
+    max-width: 120px;
+    min-width: 600px
 }
 
 nav ul {  
@@ -101,4 +102,37 @@ footer {
 footer ul {
     text-decoration: none;
     list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+flex-direction: column ;
+padding: 10px;
+    }
+
+    nav ul {
+ width: 100%;
+ gap: 10px;
+ flex-direction: column;
+ align-items: center;
+} 
+
+.conteudo-secundario {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .conteudo-secundario p {
+       
+        flex-basis: 100%; 
+        margin: 0;
+    }
+
+   
+    main {
+        padding: 10px;
+        margin: 10px;
+    }
+
 }
