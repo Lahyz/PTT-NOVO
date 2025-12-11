@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Blanka' ;
+    font-family: 'Blanka';
     src: url(Blanka-Regular.otf) format(.otf);
 }
 
 :root {
-    --cor1: rgb(0, 0, 0);
-    --cor2: rgb(255, 255, 255);
+    --cor1: black;
+    --cor2: white;
     --cor3: #f5f3f1ea;
 
     --fonte-logo: 'Blanka', sans-serif;
@@ -19,25 +19,30 @@
 
 header {
     background-color: var(--cor1);
+    background-image: url('/imagens/bandeiras.JPG');
     text-align: center;
-        
+
 }
 
 header p {
-    color: var(--cor2);
+    color: white;
     margin-top: 10px;
     font-size: 20px;
-}  
-
-.logo {
-    max-width: 1200px;   
 }
 
-nav ul {  
-    text-align: justify;  
-    display: flex;     
+.logo {
+    max-width: 1200px;
+}
+
+.topo {
+    background-color: rgba(0, 0, 0, 0.826);
+}
+
+nav ul {
+    text-align: justify;
+    display: flex;
     color: var(--cor2);
-    gap: 30px; 
+    gap: 30px;
     list-style: none;
     padding: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -47,16 +52,17 @@ nav ul {
 nav li a {
     text-decoration: none;
     color: var(--cor2);
-    font-weight: bold; 
+    font-weight: bold;
     border-radius: 5px;
     padding: 10px;
-    transition: .5s;   
-    }
+    transition: .5s;
+}
 
 nav ul li a:hover {
-    background-color: var(--cor3);
-    color: rgb(11, 11, 11);
+    background-color: white;
+    color: var(--cor1);
 }
+
 .versiculo {
     padding-bottom: 20px;
 }
@@ -64,37 +70,182 @@ nav ul li a:hover {
 main {
     text-align: justify;
     padding: 20px;
-    margin: 40px; 
-    font-family: var(--fonte-padrao);   
+    margin: 40px;
+    font-family: var(--fonte-padrao);
 }
 
 .conteudo-principal {
-    display: flex;    
+    display: flex;
     gap: 50px;
-    text-align: center;
-    flex-direction: column;    
+    flex-direction: column;
+}
+
+.conteudo-principal p {
+    line-height: 1.6;
+    text-align: justify;
+    margin: 10px 0px;
+}
+
+.galeria-missoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.galeria-missoes2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.item-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.item-foto {
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.item-foto img:hover {
+    transform: scale(1.1);
+}
+
+.grande {
+    grid-column: span 2;
+}
+
+.primeira-imagem {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0px;
+}
+
+.segunda-imagem {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0px;
+}
+
+.segunda-imagem p {
+    margin: 50px;
+}
+
+.texto-historia h1,
+.texto-visao h2 {
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .conteudo-secundario {
     display: flex;
-    gap: 30px;
-    text-align: justify;   
-    margin: 50px 20px; 
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.conteudo-secundario p {
+.destaque-avivalistas,
+.destaque-torre,
+.destaque-conselho {
+    width: 300px;
+    height: 250px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--cor1);
+    padding: 0px 20px;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border-radius: 40px;
+    flex-direction: column;
+
+}
+
+.destaque-avivalistas h3,
+.destaque-torre h4,
+.destaque-conselho h5 {
+    margin-bottom: 25px;
+    /* Espaço entre o título e o parágrafo */
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.destaque-torre img {
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+}
+
+.destaque-torre p {
+    color: var(--cor2);
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: var(--cor2);
+    text-decoration: none;
     border-radius: 10px;
-    background-color: rgb(0, 0, 0);
-    color: var(--cor2); 
-    padding: 30px;   
+    padding: 12px 5px;
+    font-weight: bold;
+    transition: 3s;
+}
+
+.whatsapp-icon {
+    max-width: 40px;
+}
+
+.conteudo-comunitario {
+    display: flex;
+    text-align: justify;
+    padding: 20px;
+}
+
+.conteudo-comunitario h1,
+h2,
+h3 {
+    font-size: 20px;
+}
+
+.conteudo-comunitario p {
+    justify-content: center;
+    padding: 30px;
 }
 
 footer {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     background-color: var(--cor1);
-    color: var(--cor2); 
-    padding: 30px;     
+    color: var(--cor2);
+    padding: 30px;
 }
 
 footer ul {
@@ -102,35 +253,62 @@ footer ul {
     list-style: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
-    header {
-flex-direction: column ;
-padding: 10px;
+    main {
+        margin: 10px;
+        padding: 10px;
     }
 
-    nav ul { 
- gap: 10px;
- flex-direction: column;
- align-items: center;
-} 
+    nav ul {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.logo {
-    width: 300px;
-}
+    .logo {
+        width: 300px;
+    }
 
-.conteudo-secundario {
-        flex-direction: column; 
+    .primeira-imagem,
+    .segunda-imagem {
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
 
+    .texto-historia,
+    .texto-visao {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .conteudo-principal p {
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .conteudo-secundario {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
     .conteudo-secundario p {
-       
-        flex-basis: 100%; 
+
+        flex-basis: 100%;
         margin: 0;
     }
 
-   
+    .destaque-avivalistas,
+    .destaque-torre,
+    .destaque-conselho {
+        width: 80%;
+        height: auto;
+    }
+
+
     main {
         padding: 10px;
         margin: 10px;
