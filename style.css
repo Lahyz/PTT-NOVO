@@ -20,6 +20,8 @@
 header {   
     background-image: url('imagens/bandeiras.JPG');
     text-align: center;
+    background-repeat: no-repeat;   
+    background-size: cover;  
 }
 
 header p {
