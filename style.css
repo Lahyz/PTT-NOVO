@@ -17,8 +17,7 @@
     padding: 0px;
 }
 
-header {
-    background-color: var(--cor1);
+header {   
     background-image: url('/imagens/bandeiras.JPG');
     text-align: center;
 
