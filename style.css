@@ -411,8 +411,8 @@ footer ul {
     .destaque-avivalistas,
     .destaque-torre,
     .destaque-conselho {
-        width: 80%;
-        height: auto;
+        width: 90%;
+        max-height: 100%;
     }
 
 
@@ -422,3 +422,31 @@ footer ul {
     }
 
 }
+
+.treinamento2 {
+        flex-direction: column; /* Empilha a foto e o texto */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .item-foto-treinamento {
+        max-width: 90%; /* A foto ocupa quase toda a largura */
+    }
+
+    .treinamento2 p {
+        padding: 0 5px; /* Adiciona padding lateral no texto para não colar nas bordas */
+        max-width: 100%;
+        text-align: justify;
+    }
+ 
+    .treinamento3 {
+        flex-direction: column; /* Empilha a foto e o texto */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .treinamento2 p {
+        padding: 0 5px; /* Adiciona padding lateral no texto para não colar nas bordas */
+        max-width: 100%;
+        text-align: justify;
+    }
