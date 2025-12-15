@@ -3,6 +3,11 @@
     src: url(Blanka-Regular.otf) format(.otf);
 }
 
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format(.otf);
+}
+
 :root {
     --cor1: black;
     --cor2: white;
@@ -17,11 +22,11 @@
     padding: 0px;
 }
 
-header {   
+header {
     background-image: url('imagens/bandeiras.JPG');
     text-align: center;
-    background-repeat: no-repeat;   
-    background-size: cover;  
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header p {
@@ -31,7 +36,7 @@ header p {
 }
 
 .logo {
-    max-width: 1200px;
+    max-width: 400px;
 }
 
 .topo {
@@ -145,10 +150,6 @@ main {
     padding: 30px 0px;
 }
 
-.segunda-imagem p {
-    margin: 50px;
-}
-
 .texto-historia h1,
 .texto-visao h2 {
     font-size: 30px;
@@ -158,9 +159,9 @@ main {
 
 .conteudo-secundario {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 
@@ -181,31 +182,104 @@ main {
     color: var(--cor2);
     border-radius: 40px;
     flex-direction: column;
-
 }
 
 .destaque-avivalistas h3,
 .destaque-torre h4,
 .destaque-conselho h5 {
-    margin-bottom: 25px;
-    /* Espaço entre o título e o parágrafo */
     text-align: center;
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
     z-index: 1;
+    transition: 0.5s ease;
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .destaque-torre img {
     height: 100%;
     opacity: 0.6;
     position: absolute;
+    z-index: 0;
 }
 
 .destaque-torre p {
     color: var(--cor2);
-    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.destaque-avivalistas p,
+.destaque-conselho p,
+.destaque-torre p {
+    position: absolute;
+    opacity: 0;
+    max-height: 0px;
+    padding: 0 10px;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+.destaque-avivalistas:hover p,
+.destaque-conselho:hover p,
+.destaque-torre:hover p {
+    opacity: 1;
+    max-height: 250px;
+    padding-top: 10px;
+}
+
+.destaque-avivalistas:hover h3,
+.destaque-conselho:hover h5,
+.destaque-torre:hover h4 {
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.titulo-treinamento {
     text-align: center;
-    z-index: 1;
+    font-size: 40px;
+    margin-bottom: 80px;
+    font-family: 'idroid', sans-serif;
+    text-shadow: black 1px 1px 2px;
+}
+
+.conteudo-treinamento {
+    gap: 50px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.treinamento1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.treinamento2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.treinamento3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+    font-size: 20px;
+    flex-direction: row-reverse;
+}
+
+.foto-treinamento {
+   max-width: 350px;
+   height: auto;
+   border-radius: 20px;
 }
 
 .whatsapp-button {
@@ -223,10 +297,13 @@ main {
     max-width: 40px;
 }
 
-.conteudo-comunitario {
-    display: flex;
-    text-align: justify;
+.conteudo-comunitario {    
+    display: flex;   
+    gap: 50px  
     padding: 20px;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 .conteudo-comunitario h1,
@@ -239,6 +316,36 @@ h3 {
     justify-content: center;
     padding: 30px;
 }
+
+.foto-comunitario {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;   
+}
+
+.lar-idosos,
+.missao,
+.criancas {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center
+}
+
+.galeria-comunitario {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    max-width: 350px;
+    margin-bottom: 50px;
+}
+
+.galeria-comunitario .foto-comunitario:first-child {
+    grid-column: span 3; 
+    max-width: 300px; /* Diminui a largura da logo centralizada */
+    margin: 0 auto;
+}
+
 
 footer {
     display: flex;
