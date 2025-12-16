@@ -438,13 +438,27 @@ footer ul {
         margin: 0;
     }
 
+    .destaque-avivalistas p,
+    .destaque-torre p,
+    .destaque-conselho p {
+        position: static; 
+        opacity: 1;
+        max-height: none;
+        transform: none;  
+        margin-top: 10px;   
+        z-index: 1;     
+    }
+
     .destaque-avivalistas,
     .destaque-torre,
     .destaque-conselho {
-        width: 90%;
-        max-height: 100%;
-    }
-
+       height: auto;      
+        padding: 20px 10px;
+        min-height: 200px;
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+    }    
 
     main {
         padding: 10px;
