@@ -1,131 +1,249 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POR TODA TERRA</title>
+    <title>POR TODA TERRA | Movimento Missionário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/blanka" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,700&family=Cormorant+Garamond:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="menu">
-        <div class="topo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="treinamento.html">Treinamento</a></li>
-                    <li><a href="comunitario.html">Instituto</a></li>
-                </ul>
-            </nav>
-            <div class="container-principal">
 
-                <h1><img class="logo" src="imagens/globoptt-novo-sfundo.png" alt="logo-por-toda-terra"></h1>
+    <header class="menu" id="home">
+        <video autoplay loop muted playsinline class="video-fundo">
+            <source src="video/Vídeo 1.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
 
-            </div>
-            <p class="versiculo"> Pois assim o Senhor nos ordenou:
-                “Eu fiz de você uma
-                luz para os gentios, para que você leve a salvação
-                até os confins da terra." <br>Atos 13:47 </p>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#comunitario">INSTITUTO</a></li>
+                <li><a href="#treinamento">TREINAMENTO</a></li>
+            </ul>
+        </nav>
 
+        <p class="logo-assinatura">Por Toda Terra</p>
+        <p class="versiculo">
+            "Eu fiz de você uma luz para os gentios, para que você leve a salvação até os confins da terra." <br>
+            <strong>Atos 13:47</strong>
+        </p>
     </header>
 
     <main>
-        <section class="conteudo-principal">
-            <div class="primeira-imagem">
-                <section class="galeria-missoes">
-
-                    <div class="item-foto grande"> <img src="imagens/img1.jpeg" alt="homem orando por outro na rua">
-                    </div>
-
-                    <div class="item-foto"> <img src="imagens/revival.jpeg" alt="cadeira de rodas vazia"> </div>
-
-                    <div class="item-foto"> <img src="imagens/img3.jpeg" alt="homem orando por outro"> </div>
-
-                    <div class="item-foto grande"> <img src="imagens/img4.jpeg" alt="mulher orando por homem na rua">
-                    </div>
-
-                </section>
-                <div class="texto-historia">                    
-                        <h2>História</h2>
-                        <p>
-                            O movimento missionário nasceu de uma iluminação do Espírito Santo, trazendo à memória Atos 13 — o
-                            contexto da primeira viagem missionária do apóstolo Paulo. Tomamos como base o verso 47, que
-                            declara:​ <br> - Pois assim
-                            o Senhor nos ordenou: <strong>
-                                ‘’Eu fiz de você
-                                luz para os gentios, para que você leve a salvação
-                                até aos confins da terra’’
-                            </strong>.​<br>
-                            ‘Até os Confins da Terra’ é o que guia nossa vocação e nosso chamado. O clamor dos perdidos por
-                            salvação — em Jerusalém, Judéia, Samaria e até os confins da terra — nos incendeia a ganhar almas,
-                            despertar vocacionados e impulsionar cristãos a viverem uma vida verdadeiramente missional.
-                            Nos dedicamos a capacitar e equipar ministérios através de treinamentos teóricos e práticos, com
-                            foco em ativação missional e profética.
-                        </p>
-                    </div>                
-            </div>
-
-            <div class="segunda-imagem">
-                <section class="galeria-missoes2">
-                    <div class="item-foto grande"> <img src="imagens/img5.jpeg" alt="mulher orando por homem na rua">
-                    </div>
-
-                    <div class="item-foto"> <img src="imagens/img6.jpeg" alt="mulher orando por homem na rua"> </div>
-
-                    <div class="item-foto"><img src="imagens/img7.jpeg" alt=""></div>
-
-                </section>
-                <div class="texto-visao">
-                    <h2>Visão</h2>
-                    <p>Por Toda a Terra é uma tropa de missionários que reconheceu sua vocação e carrega a visão de expandir
-                        o Reino de Deus através de missões urbanas, missões transculturais e da capacitação da Noiva de
-                        Cristo. Defendemos a sã doutrina, a inerrância do Evangelho e a infalibilidade bíblica.
-                        Pregamos o amor por meio da plenitude do Evangelho e da prática de boas obras. Cremos que Jesus nos
-                        concedeu unção, autoridade, poder e ousadia para proclamar a mensagem da cruz, expulsar demônios e
-                        operar curas divinas no poder do Espírito Santo.
-                        Acreditamos que fazemos parte do avivamento tão esperado no Brasil e no mundo, firmados na Palavra
-                        de Deus e na profecia declarada por Billy Graham.​</p>
-                        </div>
+        <section id="sobre" class="reveal">
+            <div class="flex-container">
+                <div class="texto-bloco">
+                    <h2 class="subtitulo-secao">Quem Somos</h2>
+                    <p>O movimento missionário <strong>Por Toda Terra</strong> nasceu de uma iluminação do Espírito Santo, fundamentada em Atos 13. Somos uma tropa focada em expandir o Reino através de missões urbanas e transculturais.</p>
+                    <p>Atuamos com evangelismo urbano, ações sociais, discipulado e o sustento de missionários. Cada passo dado é uma resposta ao chamado: ide.</p>
+                    <p>Nossa base é a sã doutrina, o amor prático e a urgência de ser luz para as nações até que Ele venha.</p>                    
                 </div>
-
+                <div class="foto-destaque">
+                    <img src="imagens/revival.jpeg" alt="Avivamento">
+                </div>
+            </div>
         </section>
 
-        <section class="conteudo-secundario">
+        <section id="pilares" class="secao-pilares reveal">
+    <div class="header-pilares">
+        <span class="label-pilares">PILARES</span>
+        <h2 class="titulo-frentes">Quatro frentes,<br>uma só missão.</h2>
+    </div>
 
-            <div class="destaque-avivalistas">
+    <div class="grid-pilares">
+        <div class="pilar-item">
+            <div class="pilar-icon-wrapper">
+                <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <h3>Evangelismo Urbano</h3>
+            <p>Saídas semanais às ruas, praças e periferias, levando a Palavra com amor e ação prática.</p>
+        </div>
 
-                <h3>Avivalistas</h3>
-                <p>Nos reunimos para adorar ao Senhor com liberdade, buscar o poder do Espírito Santo e mergulhar na
-                    Palavra de Deus. Queremos ser canais de transformação nas casas, nas ruas e nas cidades por onde
-                    passamos.​ </p>
+        <div class="pilar-item">
+            <div class="pilar-icon-wrapper">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <h3>Apoio Missionário</h3>
+            <p>Sustento financeiro, oração e cuidado pastoral para missionários enviados em diversos campos.</p>
+        </div>
+
+        <div class="pilar-item">
+            <div class="pilar-icon-wrapper">
+                <i class="fa-solid fa-users-rays"></i>
+            </div>
+            <h3>Discipulado</h3>
+            <p>Acompanhamento de novos convertidos, formando seguidores maduros e enviadores.</p>
+        </div>
+
+        <div class="pilar-item">
+            <div class="pilar-icon-wrapper">
+                <i class="fa-solid fa-book-open-reader"></i>
+            </div>
+            <h3>Formação</h3>
+            <p>Capacitação de obreiros e voluntários para a obra do Reino com excelência e doutrina sólida.</p>
+        </div>
+    </div>
+</section>
+
+<section id="comunitario" class="secao-clara reveal">
+    <div class="header-center">
+        <h2 class="titulo-blanka">BE DIFFERENT</h2>
+        <p class="tagline">INSTITUTO COMUNITÁRIO</p>
+    </div>
+
+    <div class="sub-secao-instituto">
+        <h3 class="titulo-separador">Nossos Projetos</h3>
+        <div class="grid-comunitario">
+            <div class="card-projeto">
+                <img src="imagens/pedro richard-logo.jpeg" class="logo-projeto" alt="Lar Pedro Richard">
+                <h3>Lar Pedro Richard</h3>
+                <p>Visitas anuais a idosos, oferecendo carinho, atenção e a presença de Deus.</p>
+            </div>
+            <div class="card-projeto">
+                <img src="imagens/missao agape-logo.jpeg" class="logo-projeto" alt="Missão Ágape">
+                <h3>Missão Ágape</h3>
+                <p>Suporte e discipulado em casas de recuperação masculina através da Palavra.</p>
+            </div>
+            <div class="card-projeto">
+                <img src="imagens/casa amarela-logo.jpeg" class="logo-projeto" alt="Casa Amarela">
+                <h3>Casa Amarela</h3>
+                <p>Apoio a crianças no Lixão de Gramacho e missões humanitárias no Malawi.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-secao-instituto" style="margin-top: 80px;">
+        <div class="header-missionarios">
+            <div class="header-texto-lado">
+                <h3 class="titulo-separador" style="text-align: left; margin: 0;">Missionários no Campo</h3>
+                <p style="margin-top: 10px; color: #666;">Cada missionário apoiado representa vidas sendo alcançadas. Conheça algumas das famílias e obreiros que sustentamos com oração, recursos e cuidado integral.</p>
+            </div>
+        </div>
+
+        <div class="grid-missionarios">
+            <div class="card-missionario">
+                <div class="foto-missao"><img src="imagens/missao-ribeirinhos.jpg" alt="foto"></div>
+                <div class="info-missao">
+                    <span class="localizacao">NORTE DO BRASIL</span>
+                    <h3>Nome</h3>
+                    <p>Atuando em comunidades ribeirinhas com evangelismo na região.</p>
+                </div>
+            </div>
+            <div class="card-missionario">
+                <div class="foto-missao"><img src="imagens/missao-africa.jpg" alt="foto"></div>
+                <div class="info-missao">
+                    <span class="localizacao">ÁFRICA</span>
+                    <h3>Nome</h3>
+                    <p>Apoio ao missionário levando a palavra de Deus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="apoiar" class="secao-apoiar reveal">
+    <div class="apoio-overlay"></div> <div class="apoio-content">
+
+        <div class="header-center">
+            <span class="label-pilares" style="color: var(--accent);">COMO APOIAR</span>
+            <h2 class="titulo-frentes" style="color: #fff; margin-bottom: 10px;">Cada gesto se torna semente.</h2>
+            <p class="tagline-light">Existem muitas formas de fazer parte. Escolha a sua e caminhe connosco.</p>
+        </div>
+
+        <div class="grid-apoio">
+            <div class="card-apoio-glass">
+                <div class="icon-apoio"><i class="fa-regular fa-heart"></i></div>
+                <h3>Ore</h3>
+                <p>A oração é o sustento espiritual de cada missionário e de cada vida alcançada.</p>
             </div>
 
-            <div class="destaque-torre">
-
-                <img src="imagens/torre.png" alt="torre do xadrez">
-
-                <h3>Torre de Vigia</h3>
-                <p>O Círculo de Oração é uma torre de vigia composta por intercessores que, guiados pelo Espírito Santo,
-                    se levantam em batalha espiritual para proteger e sustentar o ministério por meio da intercessão
-                    profética.
-                </p>
+            <div class="card-apoio-glass">
+                <div class="icon-apoio"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                <h3>Contribua</h3>
+                <p>Sua oferta sustenta missionários, ações sociais e expedições evangelísticas.</p>
             </div>
 
-            <div class="destaque-conselho">
-
-                <h3>Liderança</h3>
-                <p>Temos uma liderança composta por um líder e um vice-líder, apoiados por um conselho de ética e um
-                    conselho fiscal, garantindo condução responsável, justa e totalmente transparente.​</p>
+            <div class="card-apoio-glass">
+                <div class="icon-apoio"><i class="fa-solid fa-person-walking"></i></div>
+                <h3>Vá</h3>
+                <p>Junte-se às saídas de evangelismo, viagens missionárias e projetos locais.</p>
             </div>
+        </div>
 
-        </section>
+        <div class="center-btn">
+            <a href="https://wa.me/5521965301712" target="_blank" class="btn-apoio-laranja">
+                Falar com a equipe
+            </a>
+        </div>
+    </div>
+</section>
+
+        <section id="treinamento" class="secao-escura reveal">
+    <div class="header-center">
+        <h2 class="titulo-blanka yellow">ATÉ OS CONFINS</h2>
+        <p class="tagline">TREINAMENTO MISSIONÁRIO</p>
+    </div>
+
+    <div class="container-treinamento-flex">
+        <div class="coluna-fotos-vertical">
+            <img src="imagens/treinamento1.jpeg" alt="Treinamento" class="foto-vertical">
+            <div class="duas-fotos-pequenas">
+                <img src="imagens/treinamento2.jpeg" alt="Prática">
+                <img src="imagens/missao2.jpeg" alt="Rua">
+            </div>
+        </div>
+
+        <div class="coluna-texto-treino">
+            <p class="descricao-topo">Capacitamos igrejas para o evangelismo por meio de um despertar espiritual genuíno, alinhado aos princípios da Bíblia Sagrada.
+Trabalhamos com comunidades que desejam reacender o chamado, alcançar vidas e levar luz ao ambiente onde estão inseridas. <br>
+                 Nosso treinamento é dividido em:</p>
+            
+            <ul class="lista-detalhada">
+                <li><strong>Teoria (Manhã):</strong> Louvor e imersão bíblica na missão.</li>
+                <li><strong>Prática (Tarde):</strong> Ativação dos dons e evangelismo de rua.</li>
+            </ul>
+
+            <div class="box-contato-dark">
+                <p>Os treinamentos são gratuitos.</p>
+                <a href="https://wa.me/5521965301712" target="_blank" class="btn-contato-verde">
+                    ENTRAR EM CONTATO
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
     </main>
 
     <footer>
-        <p> © 2023 POR TODA TERRA. Todos os direitos reservados.</p>
+        <p>© 2026 POR TODA TERRA. Até os confins da terra.</p>
     </footer>
-</body>
 
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                window.scrollTo({ top: target.offsetTop - 50, behavior: 'smooth' });
+            });
+        });
+
+        // Scroll Reveal
+        const reveal = () => {
+            const sections = document.querySelectorAll('.reveal');
+            sections.forEach(s => {
+                const top = s.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) s.classList.add('active');
+            });
+        };
+        window.addEventListener('scroll', reveal);
+        window.addEventListener('load', reveal);
+    </script>
+</body>
 </html>
